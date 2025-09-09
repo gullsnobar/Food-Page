@@ -165,6 +165,148 @@ body {
   border-radius: 1rem;
 }
 
+/* =======================
+   Base Styles (Already Done)
+   ======================= */
+
+/* Responsive Utilities */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =======================
+   Media Queries
+   ======================= */
+
+/* Tablets and below (≤1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 1.6rem;
+  }
+
+  .Img_box img {
+    height: 15rem;
+  }
+}
+
+/* Mobile Devices (≤768px) */
+@media (max-width: 768px) {
+  .navlist {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 13vh;
+    right: 0;
+    background: white;
+    width: 60%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: 0.4s ease;
+  }
+
+  .navlist.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .content h1 {
+    font-size: 1.4rem;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+  }
+
+  .Img_box img {
+    height: 12rem;
+  }
+}
+
+/* Small Phones (≤480px) */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .content h3 {
+    font-size: 1rem;
+  }
+
+  .content h1 {
+    font-size: 1.2rem;
+  }
+
+  .content p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  .content button {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .Img_box img {
+    height: 10rem;
+    border-radius: 20px;
+  }
+}
+/* Mobile Devices (≤768px) */
+@media (max-width: 768px) {
+  .navlist {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 13vh;
+    right: 0;
+    background: white;
+    width: 60%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: 0.4s ease;
+    z-index: 10;
+  }
+
+  /* Show menu when toggled */
+  .navlist.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .icons {
+    display: none;
+  }
+}
+
+
 
 
 
